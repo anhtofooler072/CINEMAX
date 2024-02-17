@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  background-image: url("https://wallpapercave.com/wp/wp1945897.jpg");
+  object-fit: cover;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 5px;
+}
+.cineBody {
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 0;
+  background-color: #1d1d1d5f;
+}
+.cineContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+/**============================================
+ *               SECTION SEATS
+ *=============================================**/
+.seatContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  width: 42%;
+  padding: 30px;
+  height: fit-content;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.805);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+}
+.seatRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.seatRow-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.seatBtn {
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+}
+/**============================================
+ *               SELECTED SEATS LIST
+ *=============================================**/
+.selectedSeat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 30%;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+}
+.selectedSeatItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: solid 1.5px #29292927;
+}
+.selectedSeatItem p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-right: -8rem;
+  color: #292929cb;
+}
+.selectedSeatItem span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #292929;
+}
+.selectedSeat .totalPrice {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #292929cb;
+}
+/*=============== END OF SECTION ==============*/
+
+/**============================================
+ *               SECTION MODAL
+ *=============================================**/
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
